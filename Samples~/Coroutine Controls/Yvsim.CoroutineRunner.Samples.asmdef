@@ -1,0 +1,7 @@
+{
+  "name": "Yvsim.CoroutineRunner.Samples",
+  "rootNamespace": "Yvsim.CoroutineRunner.Samples",
+  "references": [
+    "Yvsim.CoroutineRunner"
+  ]
+}

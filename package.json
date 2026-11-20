@@ -1,0 +1,38 @@
+{
+  "name": "com.yvsim.coroutine-runner",
+  "version": "1.0.0",
+  "displayName": "Coroutine Runner",
+  "description": "为普通 C# 类提供统一协程入口，无需继承或手动持有 MonoBehaviour，适合延迟操作、定时任务、条件等待与异步资源读取。\n\n主要功能：\n1. 启动随场景卸载结束的场景协程，或跨场景持续运行的持久协程。\n2. 将协程明确绑定到指定场景或指定对象所在的场景，支持 additive 多场景工程。\n3. 延迟、下一帧、帧末、下一次 FixedUpdate、等待条件、每帧监听，以及按间隔和次数重复调用。\n4. 延迟与重复调用可选择忽略 Time.timeScale；可按句柄取消或按生命周期批量停止。\n5. 通过 UnityWebRequest 读取文本或字节，支持网络地址、本地文件、StreamingAssets 和 Android jar:file 地址。\n\n使用说明：仅在播放模式启动协程，内部宿主按需创建；On 绑定的是对象所在场景，不是对象销毁生命周期。网络访问仍受目标平台与 CORS 限制，不依赖其他 Yvsim 包。",
+  "unity": "2021.3",
+  "author": {
+    "name": "Yvsim"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "com.unity.modules.unitywebrequest": "1.0.0"
+  },
+  "keywords": [
+    "coroutine",
+    "runner",
+    "lifecycle",
+    "scheduling",
+    "unitywebrequest"
+  ],
+  "samples": [
+    {
+      "displayName": "Coroutine Controls",
+      "description": "将 CoroutineControlsSample 添加到新场景物体，通过 IMGUI 面板操作延迟、五次重复、条件等待和独立句柄取消，观察绑定对象所在场景的协程行为；不需要 Inspector Groups。",
+      "path": "Samples~/Coroutine Controls"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liuyan7669/com.yvsim.coroutine-runner.git"
+  },
+  "documentationUrl": "https://github.com/liuyan7669/com.yvsim.coroutine-runner#readme",
+  "changelogUrl": "https://github.com/liuyan7669/com.yvsim.coroutine-runner/blob/main/CHANGELOG.md",
+  "bugs": {
+    "url": "https://github.com/liuyan7669/com.yvsim.coroutine-runner/issues"
+  },
+  "licensesUrl": "https://github.com/liuyan7669/com.yvsim.coroutine-runner/blob/main/LICENSE.md"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Yvsim.CoroutineRunner.Editor.Tests",
+  "rootNamespace": "Yvsim.CoroutineRunner.Tests",
+  "references": [
+    "Yvsim.CoroutineRunner"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}
